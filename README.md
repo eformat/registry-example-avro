@@ -13,6 +13,8 @@ mvn compile quarkus:dev
 kafkacat -b my-cluster-kafka-bootstrap.kafka:9092 -C -o end -q -u -t price -f 'key: %k, value: %s\n' -s key='i$'
 ```
 
-
+browse registry
+```
 http://localhost:8081/ui/artifacts
 http://localhost:8081/api
+```
